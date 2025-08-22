@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beauty Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌸 Beauty Store</h1>
+    <p>Your one-stop shop for self-care essentials</p>
+  </header>
+
+  <div class="container">
+    <!-- Product Section -->
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1612817159949-195b1c2cfc9e?w=400&h=400&fit=crop" alt="Lipstick">
+        <h3>Matte Lipstick</h3>
+        <p>₹499</p>
+        <button onclick="addToCart('Matte Lipstick', 499)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1612817159733-f3a3e3a0ab14?w=400&h=400&fit=crop" alt="Face Cream">
+        <h3>Hydrating Face Cream</h3>
+        <p>₹899</p>
+        <button onclick="addToCart('Face Cream', 899)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155224f2b1?w=400&h=400&fit=crop" alt="Perfume">
+        <h3>Luxury Perfume</h3>
+        <p>₹1,299</p>
+        <button onclick="addToCart('Luxury Perfume', 1299)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1611048269412-b3c807e889b1?w=400&h=400&fit=crop" alt="Shampoo">
+        <h3>Herbal Shampoo</h3>
+        <p>₹349</p>
+        <button onclick="addToCart('Herbal Shampoo', 349)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart">
+      <h2>Your Cart 🛒</h2>
+      <ul id="cart-items"></ul>
+      <p class="total">Total: ₹<span id="total">0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
